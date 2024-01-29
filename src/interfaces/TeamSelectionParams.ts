@@ -1,6 +1,6 @@
 export interface TeamSelectionParams {
-    teamSize: string;
-    powerPercentage: string;
-    speedPercentage: string;
-    passesPercentage: string;
+    teamSize: number;
+    powerPercentage: number;
+    speedPercentage: number;
+    passesPercentage: number;
 }

@@ -11,13 +11,10 @@ export const CalculateMainTeam = async (params: TeamSelectionParams) => {
                 'Content-Type': 'application/json'
             }
         });
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status}`);
-        }
         const data: TeamSelectionResponse = await response.json();
         return data;
     } catch (error) {
-        console.error("Error al realizar la solicitud GET:", error);
+        console.error("Error:", error);
         throw error;
     }
 };
